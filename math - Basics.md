@@ -72,14 +72,14 @@ $$P(A) \ P(B \mid A) = P(AB)$$
 
 Math Expectation:
 
-$$\mathbb{D}[X] = \mathbb{E}[X^2] - \mathbb{E}^2[X]$$
+$$\text{cov}[X, Y] = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]$$
+$$\mathbb{D}[X] = \text{cov}[X, X]$$
 $$\mathbb{D}[wX] = w^2 \mathbb{D}[X]$$
-$$\text{cov}(X, Y) = \mathbb{E}[XY] - \mathbb{E}[X]\mathbb{E}[Y]$$
-$$\mathbb{D}[X \pm Y] = \mathbb{D}[X] + \mathbb{D}[Y] \pm 2 \text{cov}(X, Y)$$
+$$\mathbb{D}[X \pm Y] = \mathbb{D}[X] + \mathbb{D}[Y] \pm 2 \text{cov}[X, Y]$$
 
 Bayes Law:
 
-$$P(w_i \mid A) = \frac{P(w_i A)}{P(A)} = \frac{P(w_i)\ P(A \mid w_i)}{\sum_{i=1}^n P(w_i)\ P(A \mid w_i)}$$
+$$P(w_i \mid A) = \frac{P(w_i A)}{P(A)} = \frac{P(w_i)\ P(A \mid w_i)}{\sum_{j=1}^n P(w_j)\ P(A \mid w_j)}$$
 
 Binomial Distribution:
 
