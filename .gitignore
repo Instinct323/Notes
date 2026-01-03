@@ -24,10 +24,9 @@ install
 
 # Neural Network weights
 *.pt
-!checkpoints/contact_graspnet/checkpoints/model.pt
 *.pth
 *.onnx
-*.pkf
+*.ckpt
 
 # Prerequisites
 *.d
